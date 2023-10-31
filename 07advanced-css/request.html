@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Disney World Vacations: Home</title>
+        <meta name="description" content="Learn about tips and tricks for planning a vacation to Walt Disney World">
+        <meta name="author" content="Alyssa Fife">
+        <link rel="stylesheet" href="vacations.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+        
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <img src="images/logo.png" alt="site logo" width="100" height="61">
+            <div>
+                <h1>Disney World Vacations</h1>
+                <p>See You Real Soon</p>
+            </div>
+        </header>
+        <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Disney World Vacations</a></li>
+                <li><a href="parks.html">Theme Parks</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li class="active"><a href="request.html">Request a Quote</a></li>
+            </ul>
+        </nav>
+        <!-- Start of the page content -->
+        <main>
+            <h1>Request a Quote</h1>  
+            <form method="get" class="myForm" action="thanks.html">
+            
+            <fieldset>
+            <legend>Customer Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>   
+            <label>Cell Number*<input type="tel" name="phone" required placeholder="888-888-8888"></label>
+            <label>Email*<input type="email" name="email" required></label> 
+            </fieldset>
+            
+            <fieldset>
+            <legend>Contact Method</legend>
+                <label><input type="radio" name="method" value="call">Phone Call</label>
+                <label><input type="radio" name="method" value="text">Text Message</label>
+                <label><input type="radio" name="method" value="email">Email</label>
+                
+                <label>Preferred Contact Time
+                <select name="time">
+                <option value="none">Please Select</option>
+                <option value="morning">Between 7:00am and 11:00am</option>
+                <option value="afternoon">Between 11:00am and 3:00pm</option>
+                <option value="evening">Between 3:00pm and 7:00pm</option>
+                </select>
+                </label>
+            </fieldset>    
+            
+            <fieldset>
+            <legend>Vacation Attributes</legend>    
+                <label><input type="checkbox" name="value" value="chosen">Value Resort</label>
+                <label><input type="checkbox" name="moderate" value="chosen">Moderate Resort</label>
+                <label><input type="checkbox" name="deluxe" value="chosen">Deluxe Resort</label>
+                
+                <label>Vacation Length
+                <select name="length">
+                <option value="none">Please Select</option>
+                <option value="short">1-3 Days</option>
+                <option value="long">4-7 Days</option>
+                <option value="extended">8+ Days</option>
+                </select>
+                </label>
+                
+                <label>Ticket Type
+                <select name="ticket">
+                <option value="none">Please Select</option>
+                <option value="single">Standard, Single-Park Ticket</option>
+                <option value="hopper">Park Hopper Ticket</option>
+                </select>
+                </label>
+            </fieldset>    
+                  
+            <fieldset>
+            <legend>Optional Vacation Add-ons</legend> 
+                <label><input type="checkbox" name="shuttle" value="chosen">Airport Shuttle Service</label>
+                <label><input type="checkbox" name="genie" value="chosen">Genie Plus</label>
+                <label><input type="checkbox" name="waterpark" value="chosen">Water Park Tickets</label>
+                <label><input type="checkbox" name="diningplan" value="chosen">Disney Dining Plan</label>
+            </fieldset>
+                
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+                
+                 
+                
+            <input type="submit" value="Send Quote Request"> 
+            </form>
+        </main>
+        <!-- Start of the footer -->
+        <footer>
+        <p>&copy; 2023 &bull; Alyssa Fife &bull; <a href="mailto:10848155@uvu.edu">Email Us</a> </p>
+        </footer>
+    
+    </body>
+</html>
