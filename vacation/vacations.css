@@ -1,0 +1,325 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* header stuff here */
+header {
+    background-color: white;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1vw;
+}
+header h1 {
+    margin: 0;
+    color: #164038;
+}
+header p {
+    margin: 0;
+    color: #164038;
+    letter-spacing: 4.3px;
+}
+
+/* small screens nav here */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        margin: 2vw 0;
+        padding: .78rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border: solid 1px #96b5b2;
+        border-radius: 20px;
+        color: #164038;
+    }
+    nav .active a {
+        background-color: #164038;
+        color: #B2C269;
+        background-image: linear-gradient(#164038, #12352e);
+        color: #B2C269;
+    }
+    nav a:hover {
+        color: #96b5b2;
+    }
+    
+    
+} /*end of the media query*/
+
+
+
+/* BIG screens nav here */
+@media only screen and (min-width: 801px) {
+    nav {
+    background-color: #96b5b2;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #164038;
+        font-weight: 700;
+        display: block;
+        padding: .8rem 2rem;
+    }
+
+    nav li.active a {
+        background-color: #B2C269;
+        color: #164038;
+    }
+
+    nav a:hover {
+        color: #fff;
+    }
+    
+} /*end of the media query*/
+
+
+
+/* stuff for the main */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #164038;
+}
+
+main h2 {
+    color: #748C6C;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+
+main address {
+    font-style: normal;
+    background-color: #748C6C;
+    padding: .5rem;
+    width: 14rem;
+    border: 1px solid #164038;
+    border-radius: 8px;
+}
+
+main a {
+    color: #164038;
+}
+
+main a:hover {
+    color: #96b5b2;
+}
+
+main dl {
+    border-bottom: solid 1px #96b5b2;
+    border-top: solid 1px #96b5b2;
+}
+main dl dt {
+    color: #164038;
+    font-weight: 700;
+}
+main dl dd {
+    color: #2f3133;
+    font-size: .9rem;
+}
+
+figure.paris {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.paris img {
+    width: 100%;
+    height: auto;
+}
+figure.paris figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+
+.stockholmbanner {
+    width: 100%;
+    margin: 0;
+}
+.stockholmbanner img {
+    width: 100%;
+    height: auto;
+}
+
+
+div.switzerland {
+    padding: .5rem;
+    width: 100%;
+    border: 2px solid #164038;
+    border-radius: 8px;
+    margin: 1rem 0 1rem 0;
+}
+
+
+figure.switzerland {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.switzerland img {
+    width: 100%;
+    height: auto;
+}
+figure.switzerland figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+
+div.scotland {
+    padding: .5rem;
+    width: 100%;
+    border: 2px solid #164038;
+    border-radius: 8px;
+    margin: 1rem 0 1rem 0;
+}
+figure.scotland {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.scotland img {
+    width: 100%;
+    height: auto;
+}
+figure.scotland figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.czech {
+    padding: .5rem;
+    width: 100%;
+    border: 2px solid #164038;
+    border-radius: 8px;
+    margin: 1rem 0 1rem 0;
+}
+figure.czech {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.czech img {
+    width: 100%;
+    height: auto;
+}
+figure.czech figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #164038;
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.myForm fieldset {
+    border: 1px solid #96b5b2;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #96b5b2;
+    font-size: .8rem;
+}
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+    color: #164038;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: #164038;
+}
+.myForm textarea {
+    height: 6rem;
+}
+.myForm :required {
+    background-color: rgba(116, 140, 108, 0.2);
+}
+.myForm [type=submit] {
+    background-color: #B2C269;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #164038;
+    margin: 1rem 0 0 1vw;
+}
+
+
+
+
+
+/* footer stuff here */
+footer {
+    background-color: #96b5b2;
+    text-align: center;
+    color: #164038;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear: both;
+}
+
+footer a {
+    color: #164038;
+}
+
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
